@@ -2,20 +2,23 @@
 
 ###
 
-GET {{baseUrl}}/tasks/c73b3f33-411b-410a-81f4-5acd14a52c9b
+GET {{baseUrl}}/tasks/87bc6401-9142-43cf-b208-f28449c44a57
+Authorization: Bearer {{token}}
 
 ###
 
-GET {{baseUrl}}/tasks?search=aab
+GET {{baseUrl}}/tasks
+Authorization: Bearer {{token}}
 
 ###
 
 POST {{baseUrl}}/tasks
+Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
-  "title": "aaa",
-  "description": "aaa"
+  "title": "bbb",
+  "description": "bbb"
 }
 
 ###
@@ -43,13 +46,15 @@ Content-Type: application/json
 
 ###
 
+# @name login
 POST {{baseUrl}}/auth/signin
 Content-Type: application/json
 
 {
-  "username": "benn",
+  "username": "yenn",
   "password": "benn123AA"
 }
 
 ###
 
+@token = {{login.response.body.accessToken}}

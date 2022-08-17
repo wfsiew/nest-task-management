@@ -52,6 +52,8 @@ export class AuthService {
       } else {
         throw new UnauthorizedException('Please check your login credentials');
       }
+    } else {
+      throw new UnauthorizedException('Please check your login credentials');
     }
   }
 }
