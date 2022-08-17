@@ -1,0 +1,22 @@
+@baseUrl = http://localhost:8000
+
+###
+
+GET {{baseUrl}}/tasks/c73b3f33-411b-410a-81f4-5acd14a52c9b
+
+###
+
+GET  {{baseUrl}}/tasks
+
+###
+
+POST {{baseUrl}}/tasks
+Content-Type: application/json
+
+{
+  "title": "",
+  "description": ""
+}
+
+###
+
