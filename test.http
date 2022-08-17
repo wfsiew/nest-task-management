@@ -6,7 +6,7 @@ GET {{baseUrl}}/tasks/c73b3f33-411b-410a-81f4-5acd14a52c9b
 
 ###
 
-GET  {{baseUrl}}/tasks
+GET {{baseUrl}}/tasks?search=aab
 
 ###
 
@@ -14,8 +14,41 @@ POST {{baseUrl}}/tasks
 Content-Type: application/json
 
 {
-  "title": "",
-  "description": ""
+  "title": "aaa",
+  "description": "aaa"
+}
+
+###
+
+DELETE {{baseUrl}}/tasks/d183a9ed-92cc-4273-ba70-4e08989cd697
+
+###
+
+PATCH {{baseUrl}}/tasks/82db25fb-d5dc-4200-96a1-5082918480bf/status
+Content-Type: application/json
+
+{
+  "status": "DONE"
+}
+
+###
+
+POST {{baseUrl}}/auth/signup
+Content-Type: application/json
+
+{
+  "username": "benn",
+  "password": "benn123AA"
+}
+
+###
+
+POST {{baseUrl}}/auth/signin
+Content-Type: application/json
+
+{
+  "username": "benn",
+  "password": "benn123AA"
 }
 
 ###
