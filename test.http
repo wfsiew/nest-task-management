@@ -17,8 +17,8 @@ Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
-  "title": "bbb",
-  "description": "bbb"
+  "title": "play game",
+  "description": "tv game"
 }
 
 ###
@@ -40,8 +40,8 @@ POST {{baseUrl}}/auth/signup
 Content-Type: application/json
 
 {
-  "username": "benn",
-  "password": "benn123AA"
+  "username": "benny",
+  "password": "bennY000"
 }
 
 ###
@@ -51,8 +51,8 @@ POST {{baseUrl}}/auth/signin
 Content-Type: application/json
 
 {
-  "username": "yenn",
-  "password": "benn123AA"
+  "username": "benny",
+  "password": "bennY000"
 }
 
 ###
